@@ -2,7 +2,7 @@ public class PilhaArray {
     private Produto[] produtos; // array onde ficam os produtos
     private int topo; // controla o topo da pilha
 
-    public PilhaArray(int tamanho) {
+    public PilhaArray(int tamanho) {  //construtor
         produtos = new Produto[tamanho];
         topo = -1; // começa vazia
     }
@@ -40,17 +40,17 @@ public class PilhaArray {
 
     // verifica se a pilha está cheia
     public boolean isFull() {
-        return topo == produtos.length - 1;
+        return topo == produtos.length - 1; //tamanho e indice
     }
 
     // exibe do topo até a base
     public void display() {
         if (isEmpty()) {
-            System.out.println("Pilha vazia!");
+            System.out.println("Pilha vazia!");//evita vazio
             return;
         }
 
-        for (int i = topo; i >= 0; i--) {
+        for (int i = topo; i >= 0; i--) { //percorrer
             System.out.println(produtos[i]);
         }
     }
@@ -58,10 +58,10 @@ public class PilhaArray {
     // quantidade de elementos
     public int size() {
         return topo + 1;
-    }
+    }//qtd elementos
 
     // verifica se está vazia
     public boolean isEmpty() {
         return topo == -1;
-    }
+    } //verifica se não tem nada
 }

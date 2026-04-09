@@ -21,7 +21,7 @@ public class FilaArray {
     // remove o primeiro da fila
     public Produto dequeue(){
         if (!isEmpty()){
-            Produto p = estoque[0]; // pega o primeiro
+            Produto p = estoque[0]; // pega o primeiro elemento
 
             // desloca todos para frente
             for (int i = 0; i < size() - 1; i++){
@@ -66,7 +66,7 @@ public class FilaArray {
             return;
         }
 
-        for (int i = 0; i < size(); i++){
+        for (int i = 0; i < size(); i++){ //percorre
             System.out.println(estoque[i]);
         }
     }
