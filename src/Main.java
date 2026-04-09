@@ -5,7 +5,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        PilhaArray pilha = new PilhaArray(10);
+        PilhaArray pilha = new PilhaArray(10); //construtores
         FilaArray fila = new FilaArray(10);
 
         int opcao = 0;
